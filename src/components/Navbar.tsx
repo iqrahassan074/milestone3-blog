@@ -18,6 +18,7 @@ export default function Navbar() {
         second: "2-digit",
         hour12: false,
       };
+
       setCurrentDateTime(
         now.toLocaleString("en-US", options) +
           " " +
@@ -30,9 +31,18 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="bg-indigo-600 text-xl font-semibold shadow-xl py-4">
-      <div className="container mx-auto flex justify-center items-center px-6 sm:px-8">
-        <div className="text-center text-black">
+    <header className="bg-black text-xl font-semibold shadow-xl py-4 relative">
+      <div className="container mx-auto flex justify-between items-center px-6 sm:px-8">
+       
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
+          <img
+            src="/images/logo2.png"
+            alt="Logo"
+            className="h-20" 
+          />
+        </div>
+
+        <div className="text-center text-black flex-1">
           <span className="text-sm sm:text-lg md:text-xl">{currentDateTime}</span>
         </div>
       </div>

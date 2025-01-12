@@ -9,13 +9,14 @@ interface BlogCardProps {
     description: string;
     date: string;
     imageUrl: string;
+
   };
   isDarkBackground: boolean;
 }
 
 export default function BlogCard({ post, isDarkBackground }: BlogCardProps) {
   return (
-    <Card className={`p-4 ${isDarkBackground ? 'bg-indigo-500 text-black' : 'bg-purple-500 text-black'} font-semibold text-xl rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300`}>
+    <Card className={`p-4 ${isDarkBackground ? 'bg-indigo-600 text-black' : 'bg-purple-500 text-black'} font-semibold text-xl rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300`}>
       <div className="w-full h-80 sm:h-96 md:h-[30rem] relative">
         <Image
           src={post.imageUrl}

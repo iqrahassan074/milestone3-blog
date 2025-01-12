@@ -18,7 +18,7 @@ export default function CommentSection({ postId }: CommentSectionProps) {
   const [authorName, setAuthorName] = useState('');
   const [editingCommentId, setEditingComment] = useState<string | null>(null);
 
-  // Log postId to confirm that it's passed properly
+
   console.log("Post ID:", postId);
 
   const handleAddComment = () => {
