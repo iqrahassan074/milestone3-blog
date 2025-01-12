@@ -34,9 +34,9 @@ export default function Navbar() {
     <header className="bg-black text-xl font-semibold shadow-xl py-4 relative">
       <div className="container mx-auto flex justify-between items-center px-6 sm:px-8">
        
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
           <img
-            src="/images/logo2.png"
+            src="/images/logo9.png"
             alt="Logo"
             className="h-20" 
           />
