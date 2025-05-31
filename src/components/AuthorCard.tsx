@@ -53,7 +53,7 @@ const AuthorCard = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/iqra-hassan-a511b6302/"
           className="px-4 py-2 text-black bg-cyan-400 font-bold rounded-xl font-sans hover:bg-cyan-500 transition duration-300 hover:scale-105"
         >
           LinkedIn
